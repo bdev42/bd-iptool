@@ -299,7 +299,7 @@ def subnet_gensubnet(args, sn: int, rh: int, currNw: IPAddress, numIps: int):
         sameNetCheck = '✔️'
         inRange = True
     
-    print('{:3d}|{:2d}|{:2d}|{:15s}|{:18s}|{:18s}|{:8d}|{:8d}|{:3s}'.format(sn, hostBits, bitsToBorrow, currNw.get_subnet_mask(), str(currNw.get_network_address()), str(currNw.get_broadcast_address()), numIps, numSNs, sameNetCheck))
+    print('{:3d}|{:2d}|{:2d}|{:15s}|{:18s}|{:18s}|{:8d}|{:8d}|{:3s}'.format(int(sn), int(hostBits), int(bitsToBorrow), currNw.get_subnet_mask(), str(currNw.get_network_address()), str(currNw.get_broadcast_address()), int(numIps), int(numSNs), sameNetCheck))
     return (currNw, numIps, inRange)
 
 
