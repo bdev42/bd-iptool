@@ -1,4 +1,4 @@
-# bd-iptool
+# [ARCHIVED] b(a)d-iptool
 
 ## Install guide
 ### Clone/download the project
